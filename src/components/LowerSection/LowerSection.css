@@ -1,0 +1,139 @@
+.lower-section {
+  margin-top: 100px;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  justify-items: center;
+}
+
+.product-card {
+  border: 1px solid rgba(0, 0, 0, 0.088);
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 8px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0px;
+}
+
+.product-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.product-name {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #333;
+}
+
+.product-price {
+  font-size: 1.1rem;
+  color: #888;
+  margin: 10px 0;
+}
+
+.productBtns {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.shopBtn,
+.favorite {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #007aff;
+  transition: color 0.3s ease;
+}
+
+.shopBtn:hover,
+.favorite:hover {
+  color: #005bb5;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #ddd;
+  margin: 10px 0;
+}
+
+.favorite {
+  color: #ff5e57;
+}
+
+.favorite:hover {
+  color: #e04a3f;
+}
+
+@media (max-width: 767px) {
+  .product-grid {
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+
+  .product-card {
+      padding: 8px 0;
+  }
+
+  .product-image {
+      width: 150px;
+      height: 150px;
+  }
+
+  .product-name {
+      font-size: 1.1rem;
+  }
+
+  .product-price {
+      font-size: 1rem;
+  }
+
+  .shopBtn,
+  .favorite {
+      font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .product-grid {
+      grid-template-columns: 1fr;
+      padding: 10px;
+  }
+
+  .product-card {
+      padding: 6px 0;
+  }
+
+  .product-image {
+      width: 120px;
+      height: 120px;
+  }
+
+  .product-name {
+      font-size: 1rem;
+  }
+
+  .product-price {
+      font-size: 0.9rem;
+  }
+
+  .shopBtn,
+  .favorite {
+      font-size: 1.2rem;
+  }
+}

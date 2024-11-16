@@ -1,0 +1,159 @@
+
+
+
+
+header{
+  background: var(--Background-color , #fff);
+  box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.1);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}
+  .headerBtn{
+    color: black;
+    font-size: 25px;
+    display: none;
+}
+.headerH1{
+
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: bold;
+    background: linear-gradient(90deg, black, rgb(163, 161, 161), white);
+    -webkit-background-clip: text;
+    color: transparent;
+    background-size: 200% 100%;
+    animation: eclipse 5s infinite ease-in-out;
+  }
+  
+  @keyframes eclipse {
+    0% {
+      background-position: -200% 0;
+    }
+    100% {
+      background-position: 200% 0;
+    }
+  }
+
+
+
+  .language-switcher select {
+    padding: 4px 8px;
+    font-size: 16px;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    
+  }
+  
+  .language-switcher select:focus {
+    outline: none;
+    border-color:black;
+  }
+  .language-switcher option{
+    font-size: 12px;
+
+  }
+  
+/* //////////////////////////////////// //////////////////////////////////////////////////////////////////////////// */
+
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);  
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100%);
+    opacity: 1;
+  }
+}
+.Maingmail.slide-up {
+  animation: slideUp 0.8s ease forwards;
+}
+
+.Maingmail {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9;
+  .gmail{
+      animation: slideDown 0.8s ease forwards;
+      background-color: white; 
+      padding: 20px;
+      border-radius: 10px; 
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2); 
+      width: 600px; 
+      height: 280px;
+      text-align: center;
+
+      .input-pas{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          gap: 10px;
+          margin-top: 60px;
+          .chekbox{
+              position: absolute;
+              left: 200px;
+
+           
+          }}}}
+.erorText{
+padding: 20px 10px;
+color: red;
+}
+.clear{
+border: none;
+background: none;
+font-size: 30px;
+position: absolute;
+top: 10px;
+right: 15px;
+}
+.inp{
+display: flex;
+align-items: center;
+width: 300px;
+} 
+
+
+@media(max-width:1020px){
+  .btnnnn{
+    .headerBtn{
+     display: none;
+    }
+  }
+}
+@media(max-width:767px){
+  .Maingmail{
+    .gmail{
+      width:300px; 
+      height: 250px;
+    }
+  }
+  .headerBtn{
+    color: black;
+    display: flex;
+  }
+}

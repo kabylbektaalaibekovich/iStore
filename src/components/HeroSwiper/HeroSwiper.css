@@ -1,0 +1,75 @@
+.heroSwiper{
+  margin-top:100px;
+  
+}
+
+.product-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.173);
+    padding: 40px 0px;
+    background-color: white;
+    transition: transform 0.3s ease;
+    height:450px;
+  
+  
+
+  
+  .product-image {
+    padding: 10px 0px;
+    width:200px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+}
+  h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+  }
+  
+  p {
+    font-size: 14px;
+    color: #666;
+  }
+  .productBtns{
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+ 
+  .swiper-button-next, .swiper-button-prev {
+    background-color: rgba(12, 1, 1, 0.922);
+    color: white;
+    border-radius: 50%;
+    padding: 27px;
+    font-size: 15px;
+  }
+  
+  .swiper-button-next:hover, .swiper-button-prev:hover {
+    background-color: rgba(116, 14, 14, 0.8);
+  }
+
+
+@media(max-width:767px){
+  .swiper-button-next, .swiper-button-prev {
+    color:black;
+    background: none;
+    width: 10px;
+    height: 10px;
+    
+  }
+  .swiper-button-next:hover, .swiper-button-prev:hover{
+ color: red;
+ background: none;
+  }
+  
+}
+

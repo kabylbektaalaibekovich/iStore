@@ -1,0 +1,61 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.load{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+}
+.storeLoad{
+
+  font-size: 60px;
+  font-weight: bold;
+  background: linear-gradient(90deg, black, white, black);
+  -webkit-background-clip: text;
+  color: transparent;
+  background-size: 200% 100%;
+  animation: eclipse 5s infinite ease-in-out;
+}
+
+@keyframes eclipse {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+.appleLoad{
+  width: 300px;
+
+}
+
+
+@media(max-width:767px){
+  .appleLoad{
+    width: 180px;
+  
+  }
+  .storeLoad{
+font-size: 50px;
+  }
+}
+
+@media(max-width:320px){
+  .appleLoad{
+    width: 145px;
+  
+  }
+  .storeLoad{
+font-size: 45px;
+  }
+}

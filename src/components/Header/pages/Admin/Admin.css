@@ -1,0 +1,15 @@
+#admin{
+    margin-top: 150px;
+}
+
+.adminH1{
+    text-align: center;
+}
+.inputs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+    gap: 10px;
+}

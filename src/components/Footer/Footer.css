@@ -1,0 +1,179 @@
+footer {
+    margin-top: 100px;
+    background-color: black;
+
+    padding: 50px 0px ;
+}
+
+.footer-card {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-wrap: wrap; 
+    gap: 30px;
+    text-align: center;
+}
+
+
+.footerH1{
+
+    font-size: 35px; 
+    font-family: sans-serif;
+    font-weight: 700;
+    color:white;
+    margin-top: 5px;
+    background: linear-gradient(90deg, white, rgb(163, 161, 161), black);
+    -webkit-background-clip: text;
+    color: transparent;
+    background-size: 200% 100%;
+    animation: eclipse 5s infinite ease-in-out;
+  }
+  
+  @keyframes eclipse {
+    0% {
+      background-position: -200% 0;
+    }
+    100% {
+      background-position: 200% 0;
+    }
+  }
+
+.card1, .card2 {
+    display: flex;
+    gap: 10px;
+}
+
+.card1 {
+    color: white;
+    margin-top: 13px;
+    h1{
+        font-size: 22px;
+    }
+}
+
+.card2 {
+    color: white;
+    margin-top: 13px;
+    h1{
+        font-size: 22px;
+    }
+}
+
+.card-language {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    font-size: 0.9em;
+}
+
+.card-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 35px;
+    margin-top: 15px;
+}
+
+
+@media (max-width: 767px) {
+  .footerH1{
+    color: white;
+    margin-bottom: -20px;
+  }
+
+    .card-language {
+        .card-language-icon{
+        font-size: 0.99em;
+        color: white;
+    }
+}
+
+    .card-icons {
+        .social{
+        font-size: 1.2em;
+    }
+}
+
+    .card1 {
+        .card1-text{
+        color: white;
+
+            font-size: 18px;
+            }
+    }
+
+    .card2{
+    .card2-text{
+        color: white;
+
+    font-size: 15px;
+    }
+    .card-language{
+        color: white;
+        font-size: 13px;
+    }
+}
+}
+
+@media (max-width: 480px) {
+    footer {
+        padding: 10px;
+    }
+
+    .footerH1 {
+        font-size: 1.3em;
+    }
+
+    .card1, .card2 {
+        align-items: center;
+        gap: 6px;
+    }
+
+    .card-language {
+        font-size: 0.8em;
+    }
+
+    .card-icons {
+        font-size: 1.3em;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 320px) {
+  
+
+    .card-language {
+        .card-language-icon{
+        font-size: 0.99em;
+    }
+}
+
+    .card-icons {
+        gap: 40px;
+        .social{
+        font-size: 1.2em;
+        gap: 8px;
+    }
+}
+
+    .card1 {
+        gap: 5px;
+        .card1-text{
+            font-size: 18px;
+            }
+    }
+
+    .card2{
+    .card2-text{
+    font-size: 15px;
+    }
+    .card-language{
+        font-size: 13px;
+    }
+}
+}
+.card-language .active {
+    font-weight: bold;
+    color: #f39c12;
+}
+
